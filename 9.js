@@ -83,14 +83,21 @@ var arr1 = [1, 2, 3, 4]; // 真数组
 
 
 // 下面的代码输出什么？（京东）
-Function.prototype.a = 1;
-Object.prototype.b = 2;
+// Function.prototype.a = 1;
+// Object.prototype.b = 2;
 
-function A() {}
+// function A() {}
 
-var a = new A();
+// var a = new A();
 
-console.log(a.a, a.b); // undefined 2
-console.log(A.a, A.b); // 1, 2
+// console.log(a.a, a.b); // undefined 2
+// console.log(A.a, A.b); // 1, 2
+
+function User() {}
+var user = new User()
+
+console.log(user instanceof User);
+console.log(user instanceof Object);
+
 
 
