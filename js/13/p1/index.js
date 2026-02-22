@@ -24,11 +24,11 @@ class="item"
 
 function createEl(item) {
   var a = document.createElement('a')
-  a.href = "https://pvp.qq.com/web201605/herodetail/528.shtml"
+  a.href = "https://pvp.qq.com/web201605/herodetail/"+item.ename+".shtml"
   a.target = '_blank'
   a.className = 'item'
   var img = document.createElement('img')
-  img.src = "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg"
+  img.src = "https://game.gtimg.cn/images/yxzj/img201606/heroimg/"+item.ename+"/"+item.ename+".jpg"
   a.append(img)
   var span = document.createElement('span')
   span.innerHTML = item.cname
