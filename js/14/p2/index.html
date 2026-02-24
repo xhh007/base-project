@@ -24,6 +24,13 @@
 
     <script>
       // 上面的文本框只能输入数字
+      var inp = document.querySelector('input')
+      var all = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Backspace']
+      inp.addEventListener('keydown', function(e) {
+        if (!all.includes(e.key)) {
+          e.preventDefault()
+        }
+      })
     </script>
   </body>
 </html>
